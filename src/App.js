@@ -1,28 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MouseContainer from "./components/mouse/MouseContainer";
+import UsersContainer from "./components/users/UsersContainer";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+class MouseTracker extends Component {
+    render() {
+        return (
+          <div className="App">
+              <h2>Render Props examples</h2>
+              <div className="item">
+                  <MouseContainer/>
+              </div>
+              <div className="item">
+                  <UsersContainer/>
+              </div>
+          </div>
+        );
   }
 }
 
-export default App;
+export default MouseTracker;
